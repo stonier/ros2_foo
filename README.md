@@ -1,2 +1,3 @@
-# ros2_foo
-Ros2 readme's and notes.
+# ROS2 Foo
+
+Notes/tutorials on ROS2.
