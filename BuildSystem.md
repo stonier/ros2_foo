@@ -53,6 +53,7 @@ Fetch dependencies (ecl doesn't have any, py_trees will look for a few, e.g. pyt
 
 ```
 cd ~/foo
+export ROSDISTRO_INDEX_URL=https://raw.githubusercontent.com/ros2/rosdistro/ros2/index.yaml
 rosdep update
 rosdep install --from-paths src --ignore-src
 ```
