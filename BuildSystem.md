@@ -70,7 +70,7 @@ colcon build ${COLCON_ARGS}
 ```
 
 Lots more you can do with colcon, like passing cmake args or a cmake cache to the build,
-printing the packages in build order or as a graph, running lint checkers, ... Some examples [here](https://gist.github.com/stonier/5cb09ba059c79fbf77e772881b3e9d42). You can also
+printing the packages in build order or as a graph, running lint checkers, building a single package, ... Some examples [here](https://gist.github.com/stonier/5cb09ba059c79fbf77e772881b3e9d42). You can also
 intuit some idea of the breadth of functionality available via `apt-cache search colcon*`.
 
 ## Tests
