@@ -3,9 +3,7 @@
 
 ## Installation
 
-Follow the instructions for a Bionic-Crystal install at:
-
-[https://index.ros.org/doc/ros2/Linux-Install-Debians/|https://index.ros.org/doc/ros2/Linux-Install-Debians/].
+Follow the instructions for a Bionic-Crystal install at [https://index.ros.org/doc/ros2/Linux-Install-Debians](https://index.ros.org/doc/ros2/Linux-Install-Debians).
 
 Some other packages that are needed/useful for development:
 
@@ -66,14 +64,14 @@ TODO: remove ecl_tools and fetch dependencies again (it will fetch the binaries)
 ```
 cd ~/foo
 source /opt/ros/crystal/setup.bash
+# use --merge-install if you want to make a tarball/binary of the install space
 COLCON_ARGS="--symlink-install --event-handlers console_direct+"
 colcon build ${COLCON_ARGS}
 ```
 
 Lots more you can do with colcon, like passing cmake args or a cmake cache to the build,
-printing the packages in build order or as a graph, running lint checkers, ... You can see
-some examples [here|https://gist.github.com/stonier/5cb09ba059c79fbf77e772881b3e9d42] and
-can get an idea of the various colcon extensions available with `apt-cache search colcon*`.
+printing the packages in build order or as a graph, running lint checkers, ... Some examples [here](https://gist.github.com/stonier/5cb09ba059c79fbf77e772881b3e9d42). You can also
+intuit some idea of the breadth of functionality available via `apt-cache search colcon*`.
 
 ## Tests
 
