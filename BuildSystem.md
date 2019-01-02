@@ -8,13 +8,13 @@ Follow the instructions for a Bionic-Crystal install at [https://index.ros.org/d
 Some other packages that are needed/useful for development:
 
 ```
-sudo apt install python3-vcstool python3-colcon-* python3-rosdep
+sudo apt install python-vcstool python3-colcon-* python-rosdep
 ```
 
 ## Terminology
 
 * **ament**: build system tool that builds a distributed set of packages, but defers the actual build to whatever underlying build system each package prefers (cmake, setuptools, bazel, ...)
-* **colcon**: the reference ament command-line tool
+* **colcon**: a command-line frontend for ament
 * **vcs**: utility for fetching and managing multiple repositories at once
 * **rosdep**: checks and fetches dependencies (system and ros) for a specified package
 
@@ -36,6 +36,9 @@ git clone https://github.com/stonier/py_trees
 
 vcs status
 ```
+The ecl packages make use of some CMake methods provided by ament to assist in the
+creation of the xxx-config.cmake export modules. Apart from that, they are almost
+entirely purely CMake.
 
 While both sophus and py_trees are pure in the sense that they can be just as easily
 built outside the ament/colcon build system with regular cmake/setuptools build commands,
